@@ -1,0 +1,103 @@
+.auth {
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    .form {
+      width: 31.25rem;
+      padding: 0.93rem;
+      animation: slide-up 0.5s ease;
+      
+      h2 {
+        color: var(--color-danger);
+        text-align: center;
+        font-size: 2.1rem;
+        margin: 1.25rem 0;
+        margin-bottom: 1.875rem;
+      }
+      .resetLinks{
+        display: flex;
+        justify-content: space-between;
+        a{
+          font-size: 1.125rem;
+          color: var(--color-primary);
+        }
+      }
+      form {
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+          display: block;
+          font-size: 1rem;
+          font-weight: 300;
+          padding: 0.625rem;
+          margin: 1.25rem auto;
+          width: 100%;
+          border: 1px solid #777;
+          border-radius: 5px;
+          outline: none;
+        }
+        button{
+            background-color: var(--color-primary);
+            border: none;
+            outline: none;
+            font-size: 1.25rem;
+            padding: 0.625rem 3.125rem;
+            color: #fff;
+            display: block;
+            margin: 1.25rem auto;
+            width: fit-content;
+            cursor: pointer;
+        }  
+        
+      }
+      .register .userName {
+        display: flex;
+        gap: 0.625rem;
+        input{
+            display: inline-block;
+            width: 50%;
+        }
+      }
+     
+    }
+    .links{
+        display: flex;
+        flex-direction: column;
+        gap: 0.625rem;
+        margin: 1.25rem 0;
+        a{
+            text-align: center;
+            font-size: 1rem;
+            color: var(--color-primary);
+        }
+        p {
+          text-align: center;
+          margin: 0.625rem;
+          font-size: 1rem;
+        }
+      }
+    @keyframes slide-up {
+      0% {
+        transform: translateY(-3.125rem);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+    @keyframes slide-down {
+      0% {
+        transform: translateY(3.125rem);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .img {
+      display: none;
+    }
+  }

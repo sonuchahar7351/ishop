@@ -1,0 +1,13 @@
+export {default as Home} from './home/Home'
+export {default as Contact} from './contact/Contact'
+export {default as Cart} from './cart/Cart'
+export {default as Admin} from './admin/Admin'
+export {default as orderHistory} from './orderHistory/orderHistory'
+export {default as Login} from './auth/Login'
+export {default as Reset} from './auth/Reset'
+export {default as Register} from './auth/Register'
+export {default as StorePage} from './store/Store'
+export {default as StoreCategoryCard} from './store/StoreCategoryCard'
+export {default as IPhone} from './iphone/IPhone';
+export {default as IPad} from './ipad/IPad';
+export {default as Macbook} from './macbook/Macbook'

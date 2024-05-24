@@ -1,0 +1,38 @@
+.serviceSection{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        font-size: 2rem;
+        margin: 3rem 0;
+        margin-top: 0;
+    }
+    .services-container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(18rem,1fr));
+        gap: 1rem;
+
+        .service{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            
+            h3{
+                font-size: 1.5rem;
+            }
+
+            p{
+                text-align: center;
+                color: #525252;
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
